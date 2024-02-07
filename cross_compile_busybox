@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mkdir -p build output
+
+docker run -it --rm -v ./output:/output -v ./build:/busybox busybox-builder $@
